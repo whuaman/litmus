@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+font-family: 'Open Sans', sans-serif;
+	
+}
+header{
+	background-color: #5A58AF;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.conteudo{
+	width: 98%;
+	margin: auto;
+}
+#btn-menu{
+	display: none;
+}
+header label{
+	float: right;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 30px;
+}
+.logo{
+	display: block;
+	padding: 10px;
+	margin: 6px;
+	float: left;
+}
+.logo img{
+	width: 30px;
+}
+.menu{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 53px;
+	transform: translateY(-150%);
+
+}
+h1, h4{
+	margin-bottom:20px;
+}
+.menu a{
+	display: block;
+	padding: 30px 10px;
+	background-color: rgba(0,0,0,.9);
+	text-decoration: none;
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	
+}
+.menu a:hover{
+	background-color:3 #333;
+}
+#btn-menu:checked ~ .menu{
+	transform: translateY(0%);
+	transition: .5s ease;
+}
+
+
+.convertion{
+
+	margin-top: auto;
+	padding: 130px 20px;
+	width: 100%;
+	color: white;
+	background-color: #5A58AF;
+}
+.formulario{
+	margin: 15px 0;
+}
+input{
+	width:50%;
+	padding: 10px;
+	border:none;
+	border-radius: 3px 0 0 3px;
+}
+button{
+	padding: 10px;
+	border-radius: 0 3px 3px 0;
+	border:none;
+	background-color: #F3B35C;
+	color: #fff;
+}
+@media (min-width:480px){
+
+	header label{
+	display: none;
+}
+	.menu{
+	position: static;
+	transform: translateY(0%);
+	transition: .5s ease;
+	width: auto;
+	float: right;
+	display: flex;
+	margin: 5px;
+	}
+	.menu a{
+	transition: .5s ease;
+	border: 0;
+	background: transparent;
+	}
+	.menu a:hover{
+	border-bottom: 2px solid rgba(255,255,255,.5);
+	background: transparent;
+	}
+	.conteudo{
+		width: 1000px;
+	}
+}
