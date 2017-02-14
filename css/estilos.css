@@ -12,7 +12,7 @@ font-family: 'Open Sans', sans-serif;
 header{
 	background-color: #5A58AF;
 	width: 100%;
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 }
@@ -92,7 +92,12 @@ button{
 	background-color: #F3B35C;
 	color: #fff;
 }
-@media (min-width:480px){
+.assine{
+	border:1px solid #333;
+	margin: 20px;
+	padding: 20px;
+}
+@media (min-width:780px){
 
 	header label{
 	display: none;
@@ -116,6 +121,10 @@ button{
 	background: transparent;
 	}
 	.conteudo{
-		width: 1000px;
+	width: 98%;
+	}
+	.convertion{
+		text-align: center;
+		transition: 1s ease;
 	}
 }
